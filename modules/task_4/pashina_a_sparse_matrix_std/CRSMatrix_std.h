@@ -3,7 +3,14 @@
 #define MODULES_TASK_4_PASHINA_A_SPARSE_MATRIX_STD_CRSMATRIX_STD_H_
 
 #include <string>
+#include <functional>
 #include <vector>
+#include <cmath>
+#include <algorithm>
+#include <numeric>
+#include <random>
+#include <iostream>
+#include "../../../3rdparty/unapproved/unapproved.h"
 
 class CRSMatrix {
  public:
