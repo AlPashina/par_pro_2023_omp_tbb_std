@@ -2,6 +2,7 @@
 #include <gtest/gtest.h>
 
 #include <vector>
+#include <algorithm>
 
 #include "../../../3rdparty/unapproved/unapproved.h"
 #include "./CRSMatrix_std.h"
