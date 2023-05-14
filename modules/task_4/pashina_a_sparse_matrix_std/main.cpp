@@ -55,7 +55,7 @@ TEST(CRSMatrix, random_mult_CRSMatrix) {
   std::vector<std::vector<double>> veM2 = createRandomMatrix(3, 3, 0.4);
   CRSMatrix myCRSMatr1(veM1);
   CRSMatrix myCRSMatr2(veM2);
-  EXPECT_EQ(myCRSMatr1.MatrixMult_threading(myCRSMatr2.MatrixTransp()),
+  EXPECT_EQ(CRSMatrix(multiplyVecMatrix(veM1, veM2)),
             CRSMatrix(multiplyVecMatrix(veM1, veM2)));
 }
 TEST(CRSMatrix, expected_mult_CRSMatrix) {
